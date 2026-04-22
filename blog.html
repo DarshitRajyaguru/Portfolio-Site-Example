@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Alex Carter WordPress Developer</title>
+  <meta name="description" content="WordPress tips, tutorials, development best practices, and WooCommerce insights from Senior WordPress Developer Alex Carter." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- ==================== HEADER ==================== -->
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">WP</div>
+        <span>Alex<span>Carter</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-cta"><a href="contact.html" class="btn btn-primary btn-sm">Hire Me</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<!-- ==================== HERO ==================== -->
+<section class="page-hero">
+  <canvas id="particles-canvas" style="position:absolute;inset:0;width:100%;height:100%;z-index:0;"></canvas>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="page-hero-breadcrumb">
+        <a href="index.html">Home</a><span>/</span>
+        <span style="color:var(--text-secondary);">Blog</span>
+      </div>
+      <div class="section-badge" style="margin:0 auto 20px;">Insights & Tutorials</div>
+      <h1>WordPress <span class="gradient-text">Knowledge Hub</span></h1>
+      <p class="hero-desc">Deep dives into WordPress development, performance optimization, WooCommerce tips, and the latest trends in web development.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <span style="padding:8px 18px;background:var(--glass-light);border:1px solid var(--glass-border);border-radius:100px;font-size:0.82rem;color:var(--text-secondary);">📝 Weekly Posts</span>
+        <span style="padding:8px 18px;background:var(--glass-light);border:1px solid var(--glass-border);border-radius:100px;font-size:0.82rem;color:var(--text-secondary);">⚡ WordPress Tips</span>
+        <span style="padding:8px 18px;background:var(--glass-light);border:1px solid var(--glass-border);border-radius:100px;font-size:0.82rem;color:var(--text-secondary);">🛒 WooCommerce Guides</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== BLOG CONTENT ==================== -->
+<section>
+  <div class="container">
+    <div class="blog-layout">
+      <!-- Main Content -->
+      <div class="blog-main">
+        <!-- Featured Post -->
+        <div class="section-badge reveal" style="margin-bottom:20px;">Featured Article</div>
+        <div class="glass-card blog-card featured reveal reveal-delay-1">
+          <div class="blog-thumb" style="min-height:280px;">
+            <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:5rem;background:linear-gradient(135deg,rgba(0,245,255,0.08),rgba(123,47,255,0.08));">⚡</div>
+            <div class="blog-thumb-overlay"></div>
+          </div>
+          <div class="blog-info">
+            <span class="blog-category">WordPress Performance</span>
+            <h3 style="font-size:1.4rem;">How I Achieved a 99/100 PageSpeed Score on Every WordPress Site I Build</h3>
+            <p style="font-size:0.9rem;">A step-by-step breakdown of my performance optimization checklist — from server configuration to image lazy loading, critical CSS, and Core Web Vitals mastery.</p>
+            <div class="blog-meta">
+              <span><i class="fas fa-user" style="margin-right:5px;"></i> Alex Carter</span>
+              <span><i class="fas fa-calendar" style="margin-right:5px;"></i> April 15, 2025</span>
+              <span><i class="fas fa-clock" style="margin-right:5px;"></i> 12 min read</span>
+              <a href="#" class="btn btn-sm btn-primary" style="margin-left:auto;">Read Article <i class="fas fa-arrow-right btn-icon"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Grid -->
+        <div style="margin-top:50px;">
+          <div class="section-badge reveal" style="margin-bottom:24px;">Latest Posts</div>
+          <div class="blog-grid">
+            <div class="glass-card blog-card reveal reveal-delay-1">
+              <div class="blog-thumb">
+                <div style="width:100%;height:200px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;background:linear-gradient(135deg,rgba(123,47,255,0.08),rgba(255,45,120,0.08));">🛒</div>
+              </div>
+              <div class="blog-info">
+                <span class="blog-category" style="background:var(--purple-soft);border-color:rgba(123,47,255,0.2);color:var(--purple);">WooCommerce</span>
+                <h3>10 WooCommerce Customizations Every Store Needs in 2025</h3>
+                <p style="font-size:0.88rem;">From custom checkout flows to smart upsell triggers — the WooCommerce hooks and filters that will boost your conversion rate.</p>
+                <div class="blog-meta">
+                  <span><i class="fas fa-calendar" style="margin-right:5px;"></i> April 8, 2025</span>
+                  <span><i class="fas fa-clock" style="margin-right:5px;"></i> 9 min read</span>
+                  <a href="#" style="color:var(--cyan);font-size:0.85rem;font-weight:600;margin-left:auto;">Read More →</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card blog-card reveal reveal-delay-2">
+              <div class="blog-thumb">
+                <div style="width:100%;height:200px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;background:linear-gradient(135deg,rgba(0,255,136,0.08),rgba(0,245,255,0.08));">🔒</div>
+              </div>
+              <div class="blog-info">
+                <span class="blog-category" style="background:rgba(0,255,136,0.1);border-color:rgba(0,255,136,0.2);color:var(--green);">Security</span>
+                <h3>The WordPress Security Hardening Checklist I Use on Every Build</h3>
+                <p style="font-size:0.88rem;">40+ security measures that keep WordPress sites safe from brute force, injections, and malware — straight from my own workflow.</p>
+                <div class="blog-meta">
+                  <span><i class="fas fa-calendar" style="margin-right:5px;"></i> April 1, 2025</span>
+                  <span><i class="fas fa-clock" style="margin-right:5px;"></i> 11 min read</span>
+                  <a href="#" style="color:var(--cyan);font-size:0.85rem;font-weight:600;margin-left:auto;">Read More →</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card blog-card reveal">
+              <div class="blog-thumb">
+                <div style="width:100%;height:200px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;background:linear-gradient(135deg,rgba(255,165,0,0.08),rgba(255,45,120,0.08));">🔍</div>
+              </div>
+              <div class="blog-info">
+                <span class="blog-category" style="background:rgba(255,165,0,0.1);border-color:rgba(255,165,0,0.2);color:#ffa500;">SEO</span>
+                <h3>WordPress SEO in 2025: Beyond Yoast — What Actually Moves the Needle</h3>
+                <p style="font-size:0.88rem;">The SEO strategies that got my clients to #1 on Google — including technical SEO, content clustering, and Core Web Vitals.</p>
+                <div class="blog-meta">
+                  <span><i class="fas fa-calendar" style="margin-right:5px;"></i> March 24, 2025</span>
+                  <span><i class="fas fa-clock" style="margin-right:5px;"></i> 14 min read</span>
+                  <a href="#" style="color:var(--cyan);font-size:0.85rem;font-weight:600;margin-left:auto;">Read More →</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card blog-card reveal reveal-delay-1">
+              <div class="blog-thumb">
+                <div style="width:100%;height:200px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;background:linear-gradient(135deg,rgba(0,245,255,0.08),rgba(123,47,255,0.08));">🔌</div>
+              </div>
+              <div class="blog-info">
+                <span class="blog-category">Plugin Development</span>
+                <h3>Building Your First WordPress Plugin: A Complete 2025 Guide</h3>
+                <p style="font-size:0.88rem;">From folder structure to the WordPress Plugin API — everything you need to build, test, and publish your first plugin.</p>
+                <div class="blog-meta">
+                  <span><i class="fas fa-calendar" style="margin-right:5px;"></i> March 17, 2025</span>
+                  <span><i class="fas fa-clock" style="margin-right:5px;"></i> 18 min read</span>
+                  <a href="#" style="color:var(--cyan);font-size:0.85rem;font-weight:600;margin-left:auto;">Read More →</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card blog-card reveal reveal-delay-2">
+              <div class="blog-thumb">
+                <div style="width:100%;height:200px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;background:linear-gradient(135deg,rgba(123,47,255,0.08),rgba(0,255,136,0.08));">⚙️</div>
+              </div>
+              <div class="blog-info">
+                <span class="blog-category" style="background:var(--purple-soft);border-color:rgba(123,47,255,0.2);color:var(--purple);">DevOps</span>
+                <h3>My WordPress Local Dev Setup in 2025: Local WP + Docker + Git Hooks</h3>
+                <p style="font-size:0.88rem;">The exact development environment I use for every WordPress project — automated testing, staging deployments, and CI/CD pipelines.</p>
+                <div class="blog-meta">
+                  <span><i class="fas fa-calendar" style="margin-right:5px;"></i> March 10, 2025</span>
+                  <span><i class="fas fa-clock" style="margin-right:5px;"></i> 10 min read</span>
+                  <a href="#" style="color:var(--cyan);font-size:0.85rem;font-weight:600;margin-left:auto;">Read More →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div style="display:flex;justify-content:center;align-items:center;gap:10px;margin-top:50px;" class="reveal">
+            <a href="#" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--glass-light);border:1px solid var(--glass-border);border-radius:var(--radius-sm);color:var(--text-secondary);transition:var(--trans);" class="glass-card">←</a>
+            <a href="#" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--gradient-main);border-radius:var(--radius-sm);color:#000;font-weight:700;font-size:0.9rem;">1</a>
+            <a href="#" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--glass-light);border:1px solid var(--glass-border);border-radius:var(--radius-sm);color:var(--text-secondary);">2</a>
+            <a href="#" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--glass-light);border:1px solid var(--glass-border);border-radius:var(--radius-sm);color:var(--text-secondary);">3</a>
+            <span style="color:var(--text-muted);">...</span>
+            <a href="#" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--glass-light);border:1px solid var(--glass-border);border-radius:var(--radius-sm);color:var(--text-secondary);">8</a>
+            <a href="#" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--glass-light);border:1px solid var(--glass-border);border-radius:var(--radius-sm);color:var(--text-secondary);">→</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="blog-sidebar">
+        <div class="glass-card sidebar-widget reveal">
+          <h4>Search</h4>
+          <div class="sidebar-search">
+            <input type="text" placeholder="Search articles..." />
+            <button class="btn btn-primary btn-sm"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+        <div class="glass-card sidebar-widget reveal reveal-delay-1">
+          <h4>Categories</h4>
+          <ul class="categories-list">
+            <li>WordPress Development <span>24</span></li>
+            <li>WooCommerce <span>18</span></li>
+            <li>Performance & SEO <span>15</span></li>
+            <li>Plugin Development <span>12</span></li>
+            <li>Theme Design <span>10</span></li>
+            <li>Security <span>8</span></li>
+            <li>DevOps <span>6</span></li>
+          </ul>
+        </div>
+        <div class="glass-card sidebar-widget reveal reveal-delay-2">
+          <h4>Recent Posts</h4>
+          <div class="recent-posts">
+            <div class="recent-post">
+              <div class="recent-post-thumb">⚡</div>
+              <div>
+                <h5>How I Achieved 99/100 PageSpeed Score</h5>
+                <span>April 15, 2025</span>
+              </div>
+            </div>
+            <div class="recent-post">
+              <div class="recent-post-thumb">🛒</div>
+              <div>
+                <h5>10 WooCommerce Customizations for 2025</h5>
+                <span>April 8, 2025</span>
+              </div>
+            </div>
+            <div class="recent-post">
+              <div class="recent-post-thumb">🔒</div>
+              <div>
+                <h5>WordPress Security Hardening Checklist</h5>
+                <span>April 1, 2025</span>
+              </div>
+            </div>
+            <div class="recent-post">
+              <div class="recent-post-thumb">🔍</div>
+              <div>
+                <h5>WordPress SEO Beyond Yoast in 2025</h5>
+                <span>March 24, 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card sidebar-widget reveal reveal-delay-1">
+          <h4>Tags</h4>
+          <div class="tags-cloud">
+            <span class="tag-pill">WordPress</span>
+            <span class="tag-pill">WooCommerce</span>
+            <span class="tag-pill">PHP</span>
+            <span class="tag-pill">SEO</span>
+            <span class="tag-pill">Performance</span>
+            <span class="tag-pill">Plugins</span>
+            <span class="tag-pill">Gutenberg</span>
+            <span class="tag-pill">ACF</span>
+            <span class="tag-pill">Elementor</span>
+            <span class="tag-pill">Security</span>
+            <span class="tag-pill">REST API</span>
+            <span class="tag-pill">React</span>
+          </div>
+        </div>
+        <div class="glass-card sidebar-widget reveal reveal-delay-2" style="background:linear-gradient(135deg,rgba(0,245,255,0.05),rgba(123,47,255,0.05));border-color:var(--glass-border-glow);">
+          <h4>Free Consultation</h4>
+          <p style="font-size:0.88rem;margin-bottom:20px;">Have a WordPress question or project? Let's chat — first consultation is free.</p>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Book a Call →</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== NEWSLETTER ==================== -->
+<section style="background:var(--bg-secondary);padding:80px 0;">
+  <div class="container">
+    <div class="glass-card reveal-scale" style="padding:60px;text-align:center;max-width:700px;margin:0 auto;border-color:var(--glass-border-glow);">
+      <div class="section-badge" style="margin:0 auto 20px;">Stay Updated</div>
+      <h2 style="margin-bottom:16px;">Get Weekly <span class="gradient-text">WordPress Insights</span></h2>
+      <p style="margin-bottom:36px;">Join 2,400+ WordPress developers and business owners getting actionable tips every Tuesday morning.</p>
+      <form style="display:flex;gap:12px;max-width:480px;margin:0 auto;" onsubmit="return false;">
+        <input type="email" class="newsletter-input" placeholder="Enter your email address" style="flex:1;" />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p style="font-size:0.78rem;color:var(--text-muted);margin-top:16px;">No spam. Unsubscribe anytime. Read by 2,400+ readers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA ==================== -->
+<section class="cta-section">
+  <div class="lightning-line"></div>
+  <div class="container">
+    <div class="cta-inner reveal-scale">
+      <div class="section-badge" style="margin:0 auto 20px;">Work With Me</div>
+      <h2>Want a <span class="gradient-text">Custom WordPress Solution?</span></h2>
+      <p>I apply everything I write about to real client projects. Let's build something great together.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary btn-lg">Start a Project <i class="fas fa-arrow-right btn-icon"></i></a>
+        <a href="services.html" class="btn btn-secondary btn-lg">View Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo footer-logo"><div class="nav-logo-icon">WP</div><span>Alex<span>Carter</span></span></a>
+        <p class="footer-desc">Senior WordPress Developer crafting fast, beautiful, and conversion-focused websites since 2017. Based in Austin, TX — serving clients worldwide.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-wordpress"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">WordPress Development</a></li>
+          <li><a href="services.html">WooCommerce Stores</a></li>
+          <li><a href="services.html">Theme Development</a></li>
+          <li><a href="services.html">Plugin Development</a></li>
+          <li><a href="services.html">SEO Optimization</a></li>
+          <li><a href="services.html">Maintenance Plans</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="blog.html">Blog & Tips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p style="font-size:0.88rem;color:var(--text-secondary);margin-bottom:4px;">Get WordPress tips & tricks delivered weekly.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" class="newsletter-input" placeholder="your@email.com" />
+          <button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Alex Carter. Crafted with ❤️ & ☕ in Austin, TX</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a><a href="#">Terms</a><a href="contact.html">Hire Me</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" style="position:fixed;bottom:32px;right:32px;width:48px;height:48px;border-radius:50%;background:var(--gradient-main);border:none;color:#fff;font-size:1.1rem;cursor:none;opacity:0;transform:translateY(20px);transition:all 0.3s;z-index:999;box-shadow:var(--glow-cyan);">
+  <i class="fas fa-arrow-up"></i>
+</button>
+<script src="assets/js/main.js"></script>
+<script>
+  window.addEventListener('scroll', () => {
+    const btn = document.querySelector('.back-to-top');
+    if(btn){ btn.style.opacity = window.scrollY > 400 ? '1' : '0'; btn.style.transform = window.scrollY > 400 ? 'translateY(0)' : 'translateY(20px)'; }
+  });
+</script>
+</body>
+</html>

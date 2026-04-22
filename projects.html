@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Darshit Rajyaguru WordPress Developer</title>
+  <meta name="description" content="Portfolio of 10+ WordPress projects across healthcare staffing, SaaS, e-commerce, enterprise, and digital services by Darshit Rajyaguru." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo"><div class="nav-logo-mark">DR</div><span class="nav-logo-text">Darshit<span>Rajyaguru</span></span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions"><a href="contact.html" class="btn btn-primary btn-sm">Hire Me</a></div>
+      <button class="nav-toggle"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+  <canvas id="page-hero-canvas" style="position:absolute;inset:0;width:100%;height:100%;z-index:0;"></canvas>
+  <div class="hero-glow-1" style="opacity:0.6;"></div>
+  <div class="container">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Projects</span></div>
+      <div class="label" style="margin:0 auto 20px;">My Work</div>
+      <h1>10+ WordPress <span class="grad-text">Projects</span></h1>
+      <p style="max-width:580px;margin:20px auto 40px;font-size:1.05rem;">Real-world WordPress builds for healthcare staffing, e-commerce, SaaS, enterprise, and digital services — click any card to preview details.</p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;">
+        <span style="padding:7px 18px;background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.2);border-radius:100px;font-size:0.8rem;color:var(--emerald);font-family:'JetBrains Mono',monospace;">✓ All Projects Live</span>
+        <span style="padding:7px 18px;background:rgba(37,99,235,0.08);border:1px solid rgba(37,99,235,0.15);border-radius:100px;font-size:0.8rem;color:var(--blue-bright);font-family:'JetBrains Mono',monospace;">⚡ Click to Preview</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALL PROJECTS -->
+<section>
+  <div class="container section-inner">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:44px;">
+      <h2 class="reveal" style="margin:0;">Complete <span class="grad-text">Portfolio</span></h2>
+      <div class="proj-filters reveal d1">
+        <button class="f-btn active" data-filter="all">All</button>
+        <button class="f-btn" data-filter="saas">SaaS</button>
+        <button class="f-btn" data-filter="ecommerce">E-Commerce</button>
+        <button class="f-btn" data-filter="healthcare">Healthcare</button>
+        <button class="f-btn" data-filter="enterprise">Enterprise</button>
+        <button class="f-btn" data-filter="plugin">Plugin / API</button>
+      </div>
+    </div>
+    <div class="all-projects-grid">
+
+      <div class="glass glass-hover project-card tilt reveal" data-cat="saas" onclick="openPopup('nplus')">
+        <div class="tilt-shine"></div>
+        <div class="project-thumb">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,rgba(37,99,235,0.12),rgba(6,182,212,0.08));width:100%;height:100%;position:absolute;"></div>
+          <div class="project-thumb-emoji">🌐</div>
+          <div class="project-overlay"><div class="project-preview-btn"><i class="fas fa-eye"></i> View Details</div></div>
+        </div>
+        <div class="project-info">
+          <h3>N+ Marketing Site</h3>
+          <p style="font-size:0.82rem;margin:6px 0 12px;color:var(--text-3);">nplus.global — Marketing / SaaS</p>
+          <div class="project-meta">
+            <span class="project-tech-tag">WordPress</span>
+            <span class="project-tech-tag">Elementor</span>
+            <span class="project-tech-tag">IP Detection</span>
+            <a href="https://nplus.global" target="_blank" onclick="event.stopPropagation()" class="project-url-icon"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass glass-hover project-card tilt reveal d1" data-cat="ecommerce" onclick="openPopup('aicerts')">
+        <div class="tilt-shine"></div>
+        <div class="project-thumb">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,rgba(124,58,237,0.12),rgba(37,99,235,0.08));width:100%;height:100%;position:absolute;"></div>
+          <div class="project-thumb-emoji">🏅</div>
+          <div class="project-overlay"><div class="project-preview-btn"><i class="fas fa-eye"></i> View Details</div></div>
+        </div>
+        <div class="project-info">
+          <h3>AiCerts Store</h3>
+          <p style="font-size:0.82rem;margin:6px 0 12px;color:var(--text-3);">store.aicerts.ai — E-Commerce / Certification</p>
+          <div class="project-meta">
+            <span class="project-tech-tag">WooCommerce</span>
+            <span class="project-tech-tag">Multi-Payment</span>
+            <a href="https://store.aicerts.ai" target="_blank" onclick="event.stopPropagation()" class="project-url-icon"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass glass-hover project-card tilt reveal d2" data-cat="plugin" onclick="openPopup('cfapi')">
+        <div class="tilt-shine"></div>
+        <div class="project-thumb">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,rgba(6,182,212,0.12),rgba(16,185,129,0.06));width:100%;height:100%;position:absolute;"></div>
+          <div class="project-thumb-emoji">🔌</div>
+          <div class="project-overlay"><div class="project-preview-btn"><i class="fas fa-eye"></i> View Details</div></div>
+        </div>
+        <div class="project-info">
+          <h3>ContactForm to API</h3>
+          <p style="font-size:0.82rem;margin:6px 0 12px;color:var(--text-3);">contactformtoapi.com — Plugin / SaaS</p>
+          <div class="project-meta">
+            <span class="project-tech-tag">REST API</span>
+            <span class="project-tech-tag">CF7</span>
+            <span class="project-tech-tag">Plugin</span>
+            <a href="https://contactformtoapi.com" target="_blank" onclick="event.stopPropagation()" class="project-url-icon"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass glass-hover project-card tilt reveal" data-cat="enterprise" onclick="openPopup('idalko')">
+        <div class="tilt-shine"></div>
+        <div class="project-thumb">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,rgba(37,99,235,0.1),rgba(124,58,237,0.08));width:100%;height:100%;position:absolute;"></div>
+          <div class="project-thumb-emoji">🏢</div>
+          <div class="project-overlay"><div class="project-preview-btn"><i class="fas fa-eye"></i> View Details</div></div>
+        </div>
+        <div class="project-info">
+          <h3>iDalko</h3>
+          <p style="font-size:0.82rem;margin:6px 0 12px;color:var(--text-3);">idalko.com — Enterprise / Jira Integration</p>
+          <div class="project-meta">
+            <span class="project-tech-tag">Elementor Pro</span>
+            <span class="project-tech-tag">ACF</span>
+            <span class="project-tech-tag">Mega Menu</span>
+            <a href="https://idalko.com" target="_blank" onclick="event.stopPropagation()" class="project-url-icon"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass glass-hover project-card tilt reveal d1" data-cat="healthcare" onclick="openPopup('standby24')">
+        <div class="tilt-shine"></div>
+        <div class="project-thumb">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,rgba(16,185,129,0.1),rgba(6,182,212,0.06));width:100%;height:100%;position:absolute;"></div>
+          <div class="project-thumb-emoji">🏥</div>
+          <div class="project-overlay"><div class="project-preview-btn"><i class="fas fa-eye"></i> View Details</div></div>
+        </div>
+        <div class="project-info">
+          <h3>Standby24</h3>
+          <p style="font-size:0.82rem;margin:6px 0 12px;color:var(--text-3);">standby24.co.uk — Healthcare Staffing</p>
+          <div class="project-meta">
+            <span class="project-tech-tag">Elementor</span>
+            <span class="project-tech-tag">CPT/ACF</span>
+            <span class="project-tech-tag">SMTP</span>
+            <a href="https://standby24.co.uk" target="_blank" onclick="event.stopPropagation()" class="project-url-icon"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass glass-hover project-card tilt reveal d2" data-cat="healthcare" onclick="openPopup('onecall24health')">
+        <div class="tilt-shine"></div>
+        <div class="project-thumb">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,rgba(16,185,129,0.1),rgba(37,99,235,0.06));width:100%;height:100%;position:absolute;"></div>
+          <div class="project-thumb-emoji">⚕️</div>
+          <div class="project-overlay"><div class="project-preview-btn"><i class="fas fa-eye"></i> View Details</div></div>
+        </div>
+        <div class="project-info">
+          <h3>OneCall24 Healthcare</h3>
+          <p style="font-size:0.82rem;margin:6px 0 12px;color:var(--text-3);">onecall24healthcare.co.uk — Healthcare</p>
+          <div class="project-meta">
+            <span class="project-tech-tag">Elementor Pro</span>
+            <span class="project-tech-tag">ACF</span>
+            <span class="project-tech-tag">SMTP</span>
+            <a href="https://onecall24healthcare.co.uk" target="_blank" onclick="event.stopPropagation()" class="project-url-icon"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass glass-hover project-card tilt reveal" data-cat="saas" onclick="openPopup('imsnhance')">
+        <div class="tilt-shine"></div>
+        <div class="project-thumb">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,rgba(124,58,237,0.1),rgba(245,158,11,0.06));width:100%;height:100%;position:absolute;"></div>
+          <div class="project-thumb-emoji">💼</div>
+          <div class="project-overlay"><div class="project-preview-btn"><i class="fas fa-eye"></i> View Details</div></div>
+        </div>
+        <div class="project-info">
+          <h3>IMS Nhance</h3>
+          <p style="font-size:0.82rem;margin:6px 0 12px;color:var(--text-3);">imsnhance.com — Digital Services</p>
+          <div class="project-meta">
+            <span class="project-tech-tag">Elementor Pro</span>
+            <span class="project-tech-tag">Custom JS/CSS</span>
+            <a href="https://imsnhance.com" target="_blank" onclick="event.stopPropagation()" class="project-url-icon"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass glass-hover project-card tilt reveal d1" data-cat="healthcare" onclick="openPopup('onecall24')">
+        <div class="tilt-shine"></div>
+        <div class="project-thumb">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,rgba(37,99,235,0.1),rgba(6,182,212,0.06));width:100%;height:100%;position:absolute;"></div>
+          <div class="project-thumb-emoji">👥</div>
+          <div class="project-overlay"><div class="project-preview-btn"><i class="fas fa-eye"></i> View Details</div></div>
+        </div>
+        <div class="project-info">
+          <h3>OneCall24 (Medical)</h3>
+          <p style="font-size:0.82rem;margin:6px 0 12px;color:var(--text-3);">onecall24.co.uk — UK's Leading Staffing</p>
+          <div class="project-meta">
+            <span class="project-tech-tag">WP Bakery</span>
+            <span class="project-tech-tag">Google Reviews API</span>
+            <a href="https://onecall24.co.uk" target="_blank" onclick="event.stopPropagation()" class="project-url-icon"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass glass-hover project-card tilt reveal d2" data-cat="healthcare" onclick="openPopup('onecall24edu')">
+        <div class="tilt-shine"></div>
+        <div class="project-thumb">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,rgba(245,158,11,0.1),rgba(37,99,235,0.06));width:100%;height:100%;position:absolute;"></div>
+          <div class="project-thumb-emoji">🎓</div>
+          <div class="project-overlay"><div class="project-preview-btn"><i class="fas fa-eye"></i> View Details</div></div>
+        </div>
+        <div class="project-info">
+          <h3>OneCall24 Education</h3>
+          <p style="font-size:0.82rem;margin:6px 0 12px;color:var(--text-3);">onecall24education.co.uk — Education</p>
+          <div class="project-meta">
+            <span class="project-tech-tag">Elementor Pro</span>
+            <span class="project-tech-tag">Gravity Forms</span>
+            <a href="https://onecall24education.co.uk" target="_blank" onclick="event.stopPropagation()" class="project-url-icon"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass glass-hover project-card tilt reveal" data-cat="healthcare" onclick="openPopup('aurastaffing')">
+        <div class="tilt-shine"></div>
+        <div class="project-thumb">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,rgba(244,63,94,0.08),rgba(124,58,237,0.06));width:100%;height:100%;position:absolute;"></div>
+          <div class="project-thumb-emoji">✨</div>
+          <div class="project-overlay"><div class="project-preview-btn"><i class="fas fa-eye"></i> View Details</div></div>
+        </div>
+        <div class="project-info">
+          <h3>Aura Staffing</h3>
+          <p style="font-size:0.82rem;margin:6px 0 12px;color:var(--text-3);">imsnhance.in/aurastaffing — Healthcare Recruitment</p>
+          <div class="project-meta">
+            <span class="project-tech-tag">Elementor Pro</span>
+            <span class="project-tech-tag">Child Theme</span>
+            <a href="https://imsnhance.in/aurastaffing" target="_blank" onclick="event.stopPropagation()" class="project-url-icon"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="lx-line"></div><div class="lx-line"></div>
+  <div class="cta-glow"></div>
+  <div class="container section-inner">
+    <div class="cta-inner reveal-s">
+      <div class="label" style="margin:0 auto 20px;">Next Project?</div>
+      <h2>Let's Build <span class="grad-text">Yours</span></h2>
+      <p style="max-width:500px;margin:0 auto 40px;">Your project could be next. Let's discuss requirements and create something exceptional together.</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-primary btn-lg">Start a Project <i class="fas fa-arrow-right"></i></a>
+        <a href="about.html" class="btn btn-glass btn-lg">About Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:4px;"><div class="nav-logo-mark">DR</div><span class="nav-logo-text">Darshit<span>Rajyaguru</span></span></a>
+        <p>WordPress Developer & Core Contributor. Building fast, clean, and dependable WordPress experiences since 2019.</p>
+        <div class="socials">
+          <a href="https://github.com/DarshitRajyaguru" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/darshit-rajyaguru" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://profiles.wordpress.org/darshitrajyaguru97/" target="_blank" class="social-btn"><i class="fab fa-wordpress"></i></a>
+          <a href="mailto:darshitrajyaguru@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="f-col"><h4>Services</h4><div class="f-links"><a href="about.html">WordPress Development</a><a href="about.html">WooCommerce Stores</a><a href="about.html">Plugin Development</a><a href="about.html">Performance & SEO</a></div></div>
+      <div class="f-col"><h4>Navigation</h4><div class="f-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></div></div>
+      <div class="f-col"><h4>Contact</h4><div class="f-links"><a href="mailto:darshitrajyaguru@gmail.com"><i class="fas fa-envelope" style="width:16px;"></i> darshitrajyaguru@gmail.com</a><a href="tel:+918460388441"><i class="fas fa-phone" style="width:16px;"></i> +91 84603 88441</a></div></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Darshit Rajyaguru. Built with ❤️ & WordPress</p>
+      <div class="footer-bottom-links"><a href="https://profiles.wordpress.org/darshitrajyaguru97/" target="_blank">WP.org</a><a href="contact.html">Hire Me</a></div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+  style="position:fixed;bottom:30px;right:30px;width:46px;height:46px;border-radius:50%;background:var(--grad-blue);border:none;color:#fff;font-size:1rem;cursor:none;opacity:0;transform:translateY(16px);transition:all 0.3s;z-index:998;box-shadow:var(--glow-blue);">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- PROJECT POPUP -->
+<div id="projectPopup" class="popup-overlay">
+  <div class="popup-bg" onclick="closePopup()"></div>
+  <div class="popup-box">
+    <div class="popup-header-bar">
+      <span id="popupIcon" class="ph-icon">🌐</span>
+      <div class="ph-info"><div id="popupCat" class="ph-cat">Category</div><div id="popupTitle" class="ph-title">Project Name</div></div>
+      <span class="popup-live-badge">● LIVE</span>
+      <button class="popup-close-btn" onclick="closePopup()"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="popup-body">
+      <div class="popup-preview">
+        <div class="popup-browser">
+          <div class="popup-browser-bar">
+            <span class="pb-dot r"></span><span class="pb-dot a"></span><span class="pb-dot g"></span>
+            <div id="popupBrowserUrl" class="pb-url">project-url.com</div>
+            <a id="popupUrlLink" href="#" target="_blank" style="color:var(--text-3);font-size:0.8rem;"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <div id="popupScreen" class="popup-browser-screen"><span class="popup-screen-emoji" style="position:relative;z-index:2;"></span></div>
+        </div>
+        <div style="margin-top:20px;display:flex;align-items:center;gap:10px;">
+          <span style="font-size:0.78rem;color:var(--text-3);font-family:'JetBrains Mono',monospace;">Live at:</span>
+          <a id="popupUrlText" href="#" target="_blank" style="font-size:0.82rem;color:var(--blue-bright);font-family:'JetBrains Mono',monospace;font-weight:600;"></a>
+        </div>
+      </div>
+      <div id="popupInfo" class="popup-info">
+        <h4>About the Project</h4>
+        <p id="popupDesc" class="popup-desc"></p>
+        <h4>Tech Stack</h4>
+        <div id="popupTech" class="popup-techs"></div>
+        <h4>Key Features</h4>
+        <ul id="popupFeatures" class="popup-feat-list"></ul>
+        <div class="popup-action"><a id="popupLiveBtn" href="#" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Visit Live Site</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
